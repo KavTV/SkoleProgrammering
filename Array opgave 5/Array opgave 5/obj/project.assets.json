@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kaspe\\Documents\\SkoleProgrammering\\opgave2\\opgave2\\opgave2.csproj",
-      "projectName": "opgave2",
-      "projectPath": "C:\\Users\\kaspe\\Documents\\SkoleProgrammering\\opgave2\\opgave2\\opgave2.csproj",
+      "projectUniqueName": "C:\\Users\\kaspe\\Documents\\SkoleProgrammering\\Array opgave 5\\Array opgave 5\\Array opgave 5.csproj",
+      "projectName": "Array opgave 5",
+      "projectPath": "C:\\Users\\kaspe\\Documents\\SkoleProgrammering\\Array opgave 5\\Array opgave 5\\Array opgave 5.csproj",
       "packagesPath": "C:\\Users\\kaspe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kaspe\\Documents\\SkoleProgrammering\\opgave2\\opgave2\\obj\\",
+      "outputPath": "C:\\Users\\kaspe\\Documents\\SkoleProgrammering\\Array opgave 5\\Array opgave 5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,11 @@
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\bin\Debug\netcoreapp3.1\Array opgave 5.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\bin\Debug\netcoreapp3.1\Array opgave 5.deps.json
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\bin\Debug\netcoreapp3.1\Array opgave 5.runtimeconfig.json
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\bin\Debug\netcoreapp3.1\Array opgave 5.runtimeconfig.dev.json
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\bin\Debug\netcoreapp3.1\Array opgave 5.dll
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\bin\Debug\netcoreapp3.1\Array opgave 5.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\obj\Debug\netcoreapp3.1\Array opgave 5.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\obj\Debug\netcoreapp3.1\Array opgave 5.AssemblyInfoInputs.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\obj\Debug\netcoreapp3.1\Array opgave 5.AssemblyInfo.cs
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\obj\Debug\netcoreapp3.1\Array opgave 5.dll
+C:\Users\kaspe\Documents\SkoleProgrammering\Array opgave 5\Array opgave 5\obj\Debug\netcoreapp3.1\Array opgave 5.pdb

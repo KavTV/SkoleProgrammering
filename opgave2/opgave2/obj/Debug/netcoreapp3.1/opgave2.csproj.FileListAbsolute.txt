@@ -8,3 +8,13 @@ C:\Users\kasp609g\source\repos\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.A
 C:\Users\kasp609g\source\repos\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.AssemblyInfo.cs
 C:\Users\kasp609g\source\repos\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.dll
 C:\Users\kasp609g\source\repos\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\bin\Debug\netcoreapp3.1\opgave2.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\bin\Debug\netcoreapp3.1\opgave2.deps.json
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\bin\Debug\netcoreapp3.1\opgave2.runtimeconfig.json
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\bin\Debug\netcoreapp3.1\opgave2.runtimeconfig.dev.json
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\bin\Debug\netcoreapp3.1\opgave2.dll
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\bin\Debug\netcoreapp3.1\opgave2.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.AssemblyInfoInputs.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.AssemblyInfo.cs
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.dll
+C:\Users\kaspe\Documents\SkoleProgrammering\opgave2\opgave2\obj\Debug\netcoreapp3.1\opgave2.pdb
