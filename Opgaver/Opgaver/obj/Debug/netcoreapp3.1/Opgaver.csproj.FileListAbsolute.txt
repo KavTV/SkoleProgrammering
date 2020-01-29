@@ -1,0 +1,11 @@
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\bin\Debug\netcoreapp3.1\Opgaver.exe
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\bin\Debug\netcoreapp3.1\Opgaver.deps.json
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\bin\Debug\netcoreapp3.1\Opgaver.runtimeconfig.json
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\bin\Debug\netcoreapp3.1\Opgaver.runtimeconfig.dev.json
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\bin\Debug\netcoreapp3.1\Opgaver.dll
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\bin\Debug\netcoreapp3.1\Opgaver.pdb
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\obj\Debug\netcoreapp3.1\Opgaver.csprojAssemblyReference.cache
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\obj\Debug\netcoreapp3.1\Opgaver.AssemblyInfoInputs.cache
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\obj\Debug\netcoreapp3.1\Opgaver.AssemblyInfo.cs
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\obj\Debug\netcoreapp3.1\Opgaver.dll
+C:\Users\kasp609g\source\repos\Opgaver\Opgaver\obj\Debug\netcoreapp3.1\Opgaver.pdb
