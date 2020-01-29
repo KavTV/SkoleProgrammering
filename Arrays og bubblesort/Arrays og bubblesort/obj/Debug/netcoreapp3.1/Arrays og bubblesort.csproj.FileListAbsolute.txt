@@ -1,0 +1,11 @@
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\bin\Debug\netcoreapp3.1\Arrays og bubblesort.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\bin\Debug\netcoreapp3.1\Arrays og bubblesort.deps.json
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\bin\Debug\netcoreapp3.1\Arrays og bubblesort.runtimeconfig.json
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\bin\Debug\netcoreapp3.1\Arrays og bubblesort.runtimeconfig.dev.json
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\bin\Debug\netcoreapp3.1\Arrays og bubblesort.dll
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\bin\Debug\netcoreapp3.1\Arrays og bubblesort.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\obj\Debug\netcoreapp3.1\Arrays og bubblesort.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\obj\Debug\netcoreapp3.1\Arrays og bubblesort.AssemblyInfoInputs.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\obj\Debug\netcoreapp3.1\Arrays og bubblesort.AssemblyInfo.cs
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\obj\Debug\netcoreapp3.1\Arrays og bubblesort.dll
+C:\Users\kaspe\Documents\SkoleProgrammering\Arrays og bubblesort\Arrays og bubblesort\obj\Debug\netcoreapp3.1\Arrays og bubblesort.pdb
