@@ -1,0 +1,11 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\obj\Debug\netcoreapp3.1\Metoder opgaver lette.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\obj\Debug\netcoreapp3.1\Metoder opgaver lette.AssemblyInfoInputs.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\obj\Debug\netcoreapp3.1\Metoder opgaver lette.AssemblyInfo.cs
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\bin\Debug\netcoreapp3.1\Metoder opgaver lette.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\bin\Debug\netcoreapp3.1\Metoder opgaver lette.deps.json
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\bin\Debug\netcoreapp3.1\Metoder opgaver lette.runtimeconfig.json
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\bin\Debug\netcoreapp3.1\Metoder opgaver lette.runtimeconfig.dev.json
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\bin\Debug\netcoreapp3.1\Metoder opgaver lette.dll
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\bin\Debug\netcoreapp3.1\Metoder opgaver lette.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\obj\Debug\netcoreapp3.1\Metoder opgaver lette.dll
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder opgaver lette\Metoder opgaver lette\obj\Debug\netcoreapp3.1\Metoder opgaver lette.pdb
