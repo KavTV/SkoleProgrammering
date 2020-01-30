@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder filer\Metoder filer\bin\Debug\Metoder filer.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder filer\Metoder filer\bin\Debug\Metoder filer.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder filer\Metoder filer\bin\Debug\Metoder filer.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder filer\Metoder filer\obj\Debug\Metoder filer.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder filer\Metoder filer\obj\Debug\Metoder filer.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Metoder filer\Metoder filer\obj\Debug\Metoder filer.pdb
