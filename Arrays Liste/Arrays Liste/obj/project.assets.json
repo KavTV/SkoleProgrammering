@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\opgave2\\opgave2\\opgave2.csproj",
-      "projectName": "opgave2",
-      "projectPath": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\opgave2\\opgave2\\opgave2.csproj",
+      "projectUniqueName": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Arrays Liste\\Arrays Liste\\Arrays Liste.csproj",
+      "projectName": "Arrays Liste",
+      "projectPath": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Arrays Liste\\Arrays Liste\\Arrays Liste.csproj",
       "packagesPath": "C:\\Users\\kasp609g\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\opgave2\\opgave2\\obj\\",
+      "outputPath": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Arrays Liste\\Arrays Liste\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kasp609g\\source\\repos\\Opgaver\\Opgaver\\Opgaver.csproj": {}
+    "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Opgaver\\Opgaver\\Opgaver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kasp609g\\source\\repos\\Opgaver\\Opgaver\\Opgaver.csproj": {
+    "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Opgaver\\Opgaver\\Opgaver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kasp609g\\source\\repos\\Opgaver\\Opgaver\\Opgaver.csproj",
+        "projectUniqueName": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Opgaver\\Opgaver\\Opgaver.csproj",
         "projectName": "Opgaver",
-        "projectPath": "C:\\Users\\kasp609g\\source\\repos\\Opgaver\\Opgaver\\Opgaver.csproj",
+        "projectPath": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Opgaver\\Opgaver\\Opgaver.csproj",
         "packagesPath": "C:\\Users\\kasp609g\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kasp609g\\source\\repos\\Opgaver\\Opgaver\\obj\\",
+        "outputPath": "C:\\Users\\kasp609g\\Documents\\SkoleProgrammering\\Opgaver\\Opgaver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
