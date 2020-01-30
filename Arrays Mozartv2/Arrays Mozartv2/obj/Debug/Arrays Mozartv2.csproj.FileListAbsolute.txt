@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\Arrays Mozartv2\Arrays Mozartv2\bin\Debug\Arrays Mozartv2.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\Arrays Mozartv2\Arrays Mozartv2\bin\Debug\Arrays Mozartv2.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Arrays Mozartv2\Arrays Mozartv2\bin\Debug\Arrays Mozartv2.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\Arrays Mozartv2\Arrays Mozartv2\obj\Debug\Arrays Mozartv2.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Arrays Mozartv2\Arrays Mozartv2\obj\Debug\Arrays Mozartv2.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Arrays Mozartv2\Arrays Mozartv2\obj\Debug\Arrays Mozartv2.pdb
