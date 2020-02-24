@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\Vaskemaskine\Vaskemaskine\bin\Debug\Vaskemaskine.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\Vaskemaskine\Vaskemaskine\bin\Debug\Vaskemaskine.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Vaskemaskine\Vaskemaskine\bin\Debug\Vaskemaskine.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\Vaskemaskine\Vaskemaskine\obj\Debug\Vaskemaskine.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Vaskemaskine\Vaskemaskine\obj\Debug\Vaskemaskine.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Vaskemaskine\Vaskemaskine\obj\Debug\Vaskemaskine.pdb
