@@ -14,6 +14,7 @@ namespace Vaskemaskine
 
         public void TurnItOn()
         {
+            //slukker hvis maskinen er tændt og tænder hvis den er slukket
             if (turnedon == true)
             {
                 turnedon = false;
@@ -30,11 +31,13 @@ namespace Vaskemaskine
 
         public void Fill()
         {
+            //sender tilbage hvis vaskemaskinen ikke er tændt
             if (turnedon == false)
             {
                 Console.WriteLine("Vaskemaskine ikke tændt");
                 return;
             }
+            //tæller ned
             for (int i = 10; i >= 1; i--)
             {
                 Thread.Sleep(500);
@@ -44,11 +47,13 @@ namespace Vaskemaskine
 
         public void WashMethod()
         {
+            //sender tilbage hvis vaskemaskinen ikke er tændt
             if (turnedon == false)
             {
                 Console.WriteLine("Vaskemaskine ikke tændt");
                 return;
             }
+            //tæller ned
             for (int i = 15; i >= 1; i--)
             {
                 Thread.Sleep(500);
@@ -58,11 +63,13 @@ namespace Vaskemaskine
 
         public void EcoWash()
         {
+            //sender tilbage hvis vaskemaskinen ikke er tændt
             if (turnedon == false)
             {
                 Console.WriteLine("Vaskemaskine ikke tændt");
                 return;
             }
+            //tæller ned
             for (int i = 20; i >= 1; i--)
             {
                 Thread.Sleep(500);
@@ -72,11 +79,13 @@ namespace Vaskemaskine
 
         public void Spin()
         {
+            //sender tilbage hvis vaskemaskinen ikke er tændt
             if (turnedon == false)
             {
                 Console.WriteLine("Vaskemaskine ikke tændt");
                 return;
             }
+            //tæller ned
             for (int i = 15; i >= 1; i--)
             {
                 Thread.Sleep(500);

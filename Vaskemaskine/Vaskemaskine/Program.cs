@@ -11,10 +11,12 @@ namespace Vaskemaskine
         static void Main(string[] args)
         {
             Washingmachine Wash = new Washingmachine();
+            //Kører uendeligt loop
             while (true)
             {
                 Console.WriteLine(Environment.NewLine + "Tænd/Sluk(1) Fill(2) Wash(3) ECO Wash(4) Spin(5)");
                 int input = Int32.Parse(Console.ReadLine());
+                //tjekker input og kører metoden der passer
                 switch (input)
                 {
                     case 1:
