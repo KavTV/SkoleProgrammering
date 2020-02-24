@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\Planeterne OOP\Planeterne OOP\bin\Debug\Planeterne OOP.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\Planeterne OOP\Planeterne OOP\bin\Debug\Planeterne OOP.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Planeterne OOP\Planeterne OOP\bin\Debug\Planeterne OOP.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\Planeterne OOP\Planeterne OOP\obj\Debug\Planeterne OOP.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Planeterne OOP\Planeterne OOP\obj\Debug\Planeterne OOP.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Planeterne OOP\Planeterne OOP\obj\Debug\Planeterne OOP.pdb
