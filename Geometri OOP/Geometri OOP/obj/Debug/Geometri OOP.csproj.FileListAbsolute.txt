@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\Geometri OOP\Geometri OOP\obj\Debug\Geometri OOP.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Geometri OOP\Geometri OOP\bin\Debug\Geometri OOP.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\Geometri OOP\Geometri OOP\bin\Debug\Geometri OOP.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Geometri OOP\Geometri OOP\bin\Debug\Geometri OOP.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\Geometri OOP\Geometri OOP\obj\Debug\Geometri OOP.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Geometri OOP\Geometri OOP\obj\Debug\Geometri OOP.pdb
