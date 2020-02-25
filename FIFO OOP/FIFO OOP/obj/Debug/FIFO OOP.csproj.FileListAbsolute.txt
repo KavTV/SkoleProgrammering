@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\FIFO OOP\FIFO OOP\obj\Debug\FIFO OOP.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\FIFO OOP\FIFO OOP\bin\Debug\FIFO OOP.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\FIFO OOP\FIFO OOP\bin\Debug\FIFO OOP.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\FIFO OOP\FIFO OOP\bin\Debug\FIFO OOP.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\FIFO OOP\FIFO OOP\obj\Debug\FIFO OOP.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\FIFO OOP\FIFO OOP\obj\Debug\FIFO OOP.pdb
