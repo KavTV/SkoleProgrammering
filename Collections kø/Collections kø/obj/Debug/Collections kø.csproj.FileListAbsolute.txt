@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\Collections kø\Collections kø\bin\Debug\Collections kø.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\Collections kø\Collections kø\bin\Debug\Collections kø.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Collections kø\Collections kø\bin\Debug\Collections kø.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\Collections kø\Collections kø\obj\Debug\Collections kø.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\Collections kø\Collections kø\obj\Debug\Collections kø.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\Collections kø\Collections kø\obj\Debug\Collections kø.pdb
