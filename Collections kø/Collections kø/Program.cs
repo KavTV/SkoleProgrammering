@@ -21,9 +21,9 @@ namespace Collections_kø
 
             int total = 0;
 
-            for (int i = 0; i < primes.Count; i++)
+            foreach (var item in primes)
             {
-                total++;
+                total = total + item;
             }
             Console.WriteLine(total);
 
