@@ -1,0 +1,6 @@
+C:\Users\kaspe\Documents\SkoleProgrammering\DictionaryJediMindTricks\DictionaryJediMindTricks\bin\Debug\DictionaryJediMindTricks.exe.config
+C:\Users\kaspe\Documents\SkoleProgrammering\DictionaryJediMindTricks\DictionaryJediMindTricks\bin\Debug\DictionaryJediMindTricks.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\DictionaryJediMindTricks\DictionaryJediMindTricks\bin\Debug\DictionaryJediMindTricks.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\DictionaryJediMindTricks\DictionaryJediMindTricks\obj\Debug\DictionaryJediMindTricks.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\DictionaryJediMindTricks\DictionaryJediMindTricks\obj\Debug\DictionaryJediMindTricks.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\DictionaryJediMindTricks\DictionaryJediMindTricks\obj\Debug\DictionaryJediMindTricks.pdb
