@@ -16,8 +16,9 @@ namespace DictionaryJediMindTricks
             people.Add("Kasper", 17);
             //First() finder den første ting inde i Dictionary people
             Console.WriteLine(people.First());
-
+            //Fjerner ting med Key "Han"
             people.Remove("Han");
+            //Udskriver alt i Dictionary
             Console.WriteLine("--------------");
             foreach (var item in people)
             {
