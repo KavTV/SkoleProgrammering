@@ -8,14 +8,13 @@ namespace EnTurPåBiblioteket
 {
     class Program
     {
-           static Bog Book = new Bog();
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
             
                 Book.addBooks();
             while (true)
             {
-                Console.WriteLine("Vælg bog du vil låne(1) Se bøger der kan lånes(2) vis dine lånte bøger(3) Lån valgte bøger(4)");
+                Console.WriteLine("Vælg bog du vil låne(1) Se bøger der kan lånes(2) vis de bøger du vil låne(3) Lån valgte bøger(4)");
                 int input1 = Int32.Parse(Console.ReadLine());
                 switch (input1)
                 {
@@ -25,7 +24,7 @@ namespace EnTurPåBiblioteket
                         break;
                     case 3: showLend();
                         break;
-                    case 4: 
+                    case 4: LendOut();
                         break;
                     default:
                         break;
@@ -37,6 +36,7 @@ namespace EnTurPåBiblioteket
 
 
         }
+           static Bog Book = new Bog();
 
 
         static Stack<Bog> BookStack = new Stack<Bog>();
@@ -48,7 +48,9 @@ namespace EnTurPåBiblioteket
             if (lendTrue != null)
             {
                 BookStack.Push(lendTrue);
-                Console.WriteLine("Bog lånt ud!");
+                Console.WriteLine("------------");
+                Console.WriteLine("Bog tilføjet til liste!");
+                Console.WriteLine("------------");
             }
             else
             {
@@ -65,6 +67,16 @@ namespace EnTurPåBiblioteket
             }
         }
         
+        static void LendOut()
+        {
+            Console.WriteLine("Udlåner bøger...");
+            for (int i = 0; i <= BookStack.Count; i++)
+            {
+                Console.WriteLine(BookStack.Peek().Name);
+                BookStack.Pop();
+            }
+        }
+
 
     }
 }
