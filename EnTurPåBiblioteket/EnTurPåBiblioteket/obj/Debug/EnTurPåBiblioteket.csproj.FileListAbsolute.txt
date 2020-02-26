@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\EnTurPåBiblioteket\EnTurPåBiblioteket\bin\Debug\EnTurPåBiblioteket.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\EnTurPåBiblioteket\EnTurPåBiblioteket\bin\Debug\EnTurPåBiblioteket.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\EnTurPåBiblioteket\EnTurPåBiblioteket\bin\Debug\EnTurPåBiblioteket.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\EnTurPåBiblioteket\EnTurPåBiblioteket\obj\Debug\EnTurPåBiblioteket.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\EnTurPåBiblioteket\EnTurPåBiblioteket\obj\Debug\EnTurPåBiblioteket.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\EnTurPåBiblioteket\EnTurPåBiblioteket\obj\Debug\EnTurPåBiblioteket.pdb
