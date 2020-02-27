@@ -10,7 +10,22 @@ namespace DictionaryJediMindTricks
     {
         static void Main(string[] args)
         {
-            Dictionary<string, int> people = new Dictionary<string, int>();
+            //Opret Dictionary
+            Dictionary<string, int> people = new Dictionary<string, int>() { {"Jens",20 }, {"Han",70 } };
+            //Tilføj til Dictionary
+            people.Add("Kasper", 17);
+            //First() finder den første ting inde i Dictionary people
+            Console.WriteLine(people.First());
+            //Fjerner ting med Key "Han"
+            people.Remove("Han");
+            //Udskriver alt i Dictionary
+            Console.WriteLine("--------------");
+            foreach (var item in people)
+            {
+                Console.WriteLine("{0} er {1} år",item.Key, item.Value);
+            }
+            Console.WriteLine("--------------");
+            Console.ReadLine();
         }
     }
 }
