@@ -4,3 +4,9 @@ C:\Users\kasp609g\Documents\SkoleProgrammering\Vending Machine\Vending Machine\b
 C:\Users\kasp609g\Documents\SkoleProgrammering\Vending Machine\Vending Machine\bin\Debug\Vending Machine.pdb
 C:\Users\kasp609g\Documents\SkoleProgrammering\Vending Machine\Vending Machine\obj\Debug\Vending Machine.exe
 C:\Users\kasp609g\Documents\SkoleProgrammering\Vending Machine\Vending Machine\obj\Debug\Vending Machine.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\Vending Machine\Vending Machine\bin\Debug\Vending Machine.exe.config
+C:\Users\kaspe\Documents\SkoleProgrammering\Vending Machine\Vending Machine\bin\Debug\Vending Machine.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\Vending Machine\Vending Machine\bin\Debug\Vending Machine.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\Vending Machine\Vending Machine\obj\Debug\Vending Machine.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\Vending Machine\Vending Machine\obj\Debug\Vending Machine.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\Vending Machine\Vending Machine\obj\Debug\Vending Machine.pdb

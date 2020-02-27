@@ -10,15 +10,17 @@ namespace Vending_Machine
     {
         int money;
 
-
+        private List<Product> userProducts = new List<Product>();
+        #region get/set
         public int Money { get { return money; } set { money = value; } }
+        internal List<Product> UserProducts { get => userProducts; set => userProducts = value; }
+        #endregion
 
         public User(int money)
         {
             Money = money;
         }
 
-        List<Product> UserProducts = new List<Product>();
 
 
 
