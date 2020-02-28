@@ -246,7 +246,7 @@ namespace Vending_Machine
             return null;// if no of the if statements return, then the product is not bought.
         }
 
-        public void CancelOrder(User user) // if the admin wants to take all the money.
+        public void CancelOrder(User user) // if user wants inserted money back
         {
             user.Money = user.Money + insertedMoney;
             insertedMoney = 0;
