@@ -9,13 +9,13 @@ namespace Vending_Machine
     class Product
     {
 
-        string name;
-        int price;
+        string name; // name of item
+        int price; // price of item
 
         public string Name { get { return name; } set { name = value; } }
         public int Price{ get { return price; } set { price = value; } }
 
-        public Product(string name, int price)
+        public Product(string name, int price) // Constructor creates a Product with name and price
         {
             Name = name;
             Price = price;

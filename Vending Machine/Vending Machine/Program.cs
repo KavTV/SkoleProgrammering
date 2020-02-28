@@ -15,11 +15,12 @@ namespace Vending_Machine
             User user = new User(150);
             while (true)
             {
+                Console.Clear(); // New user does not want to see what the other guy bought
                 Console.WriteLine("---Velkommen til automaten---");
-                Console.WriteLine("Tryk enter for at simulere ny bruger...");
+                Console.WriteLine("Tryk enter for at bruge maskinen...");
                 Console.ReadLine();
                 Random random = new Random();
-                user = new User(random.Next(20,300)); // Every new user gets a random amount of money
+                user = new User(random.Next(50,300)); // Every new user gets a random amount of money, to simulate a new user with new inventory
                 bool sameUser = true;
                 while (sameUser)
                 {
@@ -28,48 +29,41 @@ namespace Vending_Machine
                     string input = Console.ReadLine();
                     string selectedProduct = "";
                     //Switch to deside what option the user wants
-                    switch (input)
+                    switch (input) // i made it in a string so no matter what the user types, it will not crash
                     {
                         case "1":
-                            machine.AvailableProducts();
-                            selectedProduct = machine.SelectProduct();
-                            if (selectedProduct != null)
+                            selectedProduct = machine.SelectProduct(); //Gets a string with the item the user has selected
+                            if (selectedProduct != null) // if string is not null purchase product
                             {
-                                Product purchasedProduct = machine.PurchaseProduct(user, selectedProduct);
+                                // this buys the product if enough money, and gives change to user, it then returns the product. So the user can get it in his inventory
+                                Product purchasedProduct = machine.PurchaseProduct(user, selectedProduct); 
                                 if (purchasedProduct != null)
                                 {
-                                    user.UserProducts.Add(purchasedProduct);
+                                    user.UserProducts.Add(purchasedProduct); // adds the purchased item, to user inventory. Every new user has a new inventory.
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Du har købt {0}!", purchasedProduct.Name);
+                                    Console.ForegroundColor = ConsoleColor.Gray;
                                 }
                             }
                             break;
                         case "2":
-                            InsertCoin(machine, user);
+                            machine.InsertMoney(user);
                             break;
                         case "3":
                             machine.AvailableProducts();
                             break;
                         case "4":
-                            if (user.UserProducts.Count == 0)
-                            {
-                                Console.WriteLine(Environment.NewLine + "Du har ikke købt nogen ting");
-                            }
-                            else
-                            {
-                                foreach (var item in user.UserProducts)
-                                {
-                                    Console.WriteLine(item.Name);
-                                }
-                            }
+                            user.GetUserInventory();
                             break;
                         case "5":
-                            machine.CancelOrder(user);
+                            machine.CancelOrder(user); //Returns money to user
                             break;
                         case "6":
                             AdminMenu(machine);
                             break;
                         case "7":
-                            sameUser = false;
+                            machine.CancelOrder(user); // Returns money to user before exiting.
+                            sameUser = false; // ends the loop to enable a new user to use the machine. Every user has its own money and inventory
                             break;
                         default:
                             Console.WriteLine("Nummeret hører ikke til nogen ting");
@@ -84,7 +78,9 @@ namespace Vending_Machine
             }
         }
 
-        private static void AdminMenu(Machine machine)
+        
+
+        private static void AdminMenu(Machine machine) // This is where admins are able to maintain the machine
         {
             Console.WriteLine("-------------------");
             Console.WriteLine("Administrator panel");
@@ -92,6 +88,7 @@ namespace Vending_Machine
             Console.WriteLine("-------------------");
             Console.WriteLine("1. Fyld maskinen op");
             Console.WriteLine("2. Fjern penge fra maskinen");
+            Console.WriteLine("3. Skift priser på ting");
             string input = Console.ReadLine();
             switch (input)
             {
@@ -101,7 +98,7 @@ namespace Vending_Machine
                 case "2":
                     machine.AllMoney = 0;
                     break;
-                case "3":
+                case "3": machine.ChangePrices();
                     break;
                 default:
                     break;
@@ -109,24 +106,6 @@ namespace Vending_Machine
 
         }
 
-        static void InsertCoin(Machine machine, User user)
-        {
-            Console.WriteLine("Skriv hvor mange kr du vil sætte ind");
-            //Makes console string into int, but crashes if letter is written.
-            int input = Int32.Parse(Console.ReadLine());
-            //if input is lower or equal to users money it will insert them into the machine.
-            if (input <= user.Money)
-            {
-                machine.InsertedMoney = machine.InsertedMoney + input;
-                user.Money = user.Money - input;
-            }
-            //if Money to be inserted is higher than users money
-            else
-            {
-                Console.WriteLine("Du har ikke nok penge");
-            }
-
-        }
 
         //Write all welcome messages here, for better overview
         private static void WelcomeMessage(User user, Machine machine)
@@ -137,7 +116,7 @@ namespace Vending_Machine
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("1. Vælg den ting du vil købe");
             Console.WriteLine("2. Indsæt penge");
-            Console.WriteLine("3. Se hvad der er tilbage i automaten");
+            Console.WriteLine("3. Se hvad der er i automaten");
             Console.WriteLine("4. Se de ting du har købt");
             Console.WriteLine("5. Få penge tilbage fra automat");
             Console.WriteLine("6. Admin. Menu");

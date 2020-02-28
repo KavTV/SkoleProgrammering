@@ -9,9 +9,9 @@ namespace Vending_Machine
     class Machine
     {
 
-        int insertedMoney;
-        int allMoney;
-        //EDIT PRICES FOR ITEMS
+        int insertedMoney; // Money currently inside the machine
+        int allMoney; // The money inside the machine
+        //EDIT DEFAULT PRICES FOR ITEMS
         int cocaColaPrice = 21;
         int fantaPrice = 20;
         int cocioPrice = 16;
@@ -22,16 +22,16 @@ namespace Vending_Machine
         int redbullPrice = 35;
         int colaEnergyPrice = 30;
         int snackbarPrice = 17;
-        //
+        //EDIT DEFAULT PRICES FOR ITEMS
 
         public int InsertedMoney { get { return insertedMoney; } set { insertedMoney = value; } }
         public int AllMoney { get { return allMoney; } set { allMoney = value; } }
 
-        Dictionary<string, Stack<Product>> allProducts = new Dictionary<string, Stack<Product>>();
+        Dictionary<string, Stack<Product>> allProducts = new Dictionary<string, Stack<Product>>(); // All products are stored here
 
 
 
-        public Machine()
+        public Machine() // Constructor
         {
             //Add all products into the dictionary
             allProducts.Add("CocaCola", new Stack<Product>());
@@ -52,14 +52,14 @@ namespace Vending_Machine
 
 
 
-        public void Fill()
+        public void Fill() //Fill the machine with products
         {
             //Makes 10 new objects Product inside stack
             foreach (var item in allProducts)
             {
                 //Making the price editable from the admin panel.
                 int price = 5;
-                if (item.Key == "CocaCola"){ price = cocaColaPrice;}
+                if (item.Key == "CocaCola") { price = cocaColaPrice; }
                 if (item.Key == "Fanta") { price = fantaPrice; }
                 if (item.Key == "Cocio") { price = cocioPrice; }
                 if (item.Key == "Faxecondi") { price = faxecondiPrice; }
@@ -76,21 +76,86 @@ namespace Vending_Machine
                     allProducts[item.Key].Push(new Product(item.Key, price));
                 }
             }
-            
-            
         }
 
-        public void AvailableProducts()
+
+        public void ChangePrices() //Admin can change price for selected item
+        {
+
+            string selectedProduct = SelectProduct();
+            if (selectedProduct == null) { return; }
+            Console.WriteLine("Skriv den pris du vil skifte til");
+            try // try/catch becasue of the int32.Parse
+            {
+                int input = Int32.Parse(Console.ReadLine()); // tries to make the input into int, but crashes if letters are in the line
+                //Made the if statements in 1 line since its a waste of space.
+                //I need this because the next time i fill items, its gonna be default unless i change it here
+                if (selectedProduct == "CocaCola") { cocaColaPrice = input; }
+                if (selectedProduct == "Fanta") { fantaPrice = input; }
+                if (selectedProduct == "Cocio") { cocioPrice = input; }
+                if (selectedProduct == "Faxecondi") { faxecondiPrice = input; }
+                if (selectedProduct == "Corny") { cornyPrice = input; }
+                if (selectedProduct == "Snickers") { snickersPrice = input; }
+                if (selectedProduct == "Twix") { twixPrice = input; }
+                if (selectedProduct == "Redbull") { redbullPrice = input; }
+                if (selectedProduct == "ColaEnergy") { colaEnergyPrice = input; }
+                if (selectedProduct == "Snackbar") { snackbarPrice = input; }
+
+                foreach (var item in allProducts[selectedProduct]) //Changes the current products in the stack to price user wants
+                {
+                    item.Price = input;
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("----------------------------");
+                Console.WriteLine("Der skete en fejl, prøv igen");
+                Console.WriteLine("----------------------------");
+            }
+        }
+
+
+        public void InsertMoney(User user) // Since my machine can take creditcards you can write the amount you want, else it would take too long to put coins
+        {
+            Console.WriteLine("Skriv hvor mange kr du vil sætte ind");
+
+            try // try/catch because of int32.Parse or if anything else would error
+            {
+                int input = Int32.Parse(Console.ReadLine()); //Makes console string into int, but crashes if letter is written.
+
+                //if input is lower or equal to users money it will insert them into the machine.
+                if (input <= user.Money)
+                {
+                    insertedMoney = insertedMoney + input;
+                    user.Money = user.Money - input;
+                }
+                //if Money to be inserted is higher than users money
+                else
+                {
+                    Console.WriteLine("Du har ikke nok penge");
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("----------------------------");
+                Console.WriteLine("Der skete en fejl, prøv igen");
+                Console.WriteLine("----------------------------");
+            }
+        }
+
+
+
+        public void AvailableProducts() //Shows what currently is in the machine
         {
             //Checking for stacks inside dictionary, and peeking to see what item it is. Writes the item in writeline
             Console.WriteLine("-------------------------");
             int productNumber = 0;
             foreach (var item in allProducts)
             {
-                productNumber++;
-                if (item.Value.Count > 0)
+                productNumber++; // foreach stack in allProducts plus productNumber with 1
+                if (item.Value.Count > 0) // if stack is not empty show the product name and price.
                 {
-                    Console.WriteLine("{0}. {1}, {2}kr", productNumber,item.Value.Peek().Name, item.Value.Peek().Price);
+                    Console.WriteLine("{0}. {1}, {2}kr", productNumber, item.Value.Peek().Name, item.Value.Peek().Price);
                 }
                 else
                 {
@@ -102,10 +167,10 @@ namespace Vending_Machine
 
         }
 
-        public string SelectProduct()
+        public string SelectProduct() //Returns string with the item user has selected
         {
-            Console.WriteLine("Indtast tallet ved den ting du vil købe");
-            
+            AvailableProducts(); // makes it easier for the user to decide what to buy
+            Console.WriteLine("Indtast tallet ved den ting du vil vælge");
             string input = Console.ReadLine();
             switch (input)
             {
@@ -129,7 +194,7 @@ namespace Vending_Machine
                     return "ColaEnergy";
                 case "10":
                     return "Snackbar";
-                default: 
+                default:
                     return null;
             }
         }
@@ -154,24 +219,26 @@ namespace Vending_Machine
                 Console.WriteLine("---------------------------------------");
                 return null;
             }
-            else if(productprice < insertedMoney)
+            else if (productprice < insertedMoney) //if more than enough money, make sure the user gets change.
             {
-                Console.WriteLine(Environment.NewLine);
+                //usually you cant buy more than 1 thing at a time, so you get the change from every bought product.
+                Console.WriteLine("--------------------------------------------");
                 Console.WriteLine("Der er flere penge tilbage, giver byttepenge");
-                
+                Console.WriteLine("--------------------------------------------");
+
                 insertedMoney = insertedMoney - productprice;
                 user.Money = user.Money + insertedMoney;
                 insertedMoney = 0;
                 allMoney = allMoney + productprice;
                 product.Pop();
-                return productPeek;
+                return productPeek; // returns the product bought, so the user can get it in his inventory
             }
-            else if(productprice == insertedMoney)
+            else if (productprice == insertedMoney)
             {
                 insertedMoney = insertedMoney - productprice;
                 allMoney = allMoney + productprice;
                 product.Pop();
-                return productPeek;
+                return productPeek; // returns the product bought, so the user can get it in his inventory
             }
             Console.WriteLine("---------------------------------------");
             Console.WriteLine("Der er ikke flere ting af dette produkt");
