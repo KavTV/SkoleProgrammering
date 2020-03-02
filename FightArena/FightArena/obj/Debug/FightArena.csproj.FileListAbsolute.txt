@@ -1,0 +1,6 @@
+C:\Users\kasp609g\Documents\SkoleProgrammering\FightArena\FightArena\bin\Debug\FightArena.exe.config
+C:\Users\kasp609g\Documents\SkoleProgrammering\FightArena\FightArena\bin\Debug\FightArena.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\FightArena\FightArena\bin\Debug\FightArena.pdb
+C:\Users\kasp609g\Documents\SkoleProgrammering\FightArena\FightArena\obj\Debug\FightArena.csprojAssemblyReference.cache
+C:\Users\kasp609g\Documents\SkoleProgrammering\FightArena\FightArena\obj\Debug\FightArena.exe
+C:\Users\kasp609g\Documents\SkoleProgrammering\FightArena\FightArena\obj\Debug\FightArena.pdb
