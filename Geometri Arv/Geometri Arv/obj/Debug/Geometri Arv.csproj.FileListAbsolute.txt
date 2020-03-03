@@ -1,0 +1,6 @@
+C:\Users\kasp609g\source\repos\Geometri Arv\Geometri Arv\bin\Debug\Geometri Arv.exe.config
+C:\Users\kasp609g\source\repos\Geometri Arv\Geometri Arv\bin\Debug\Geometri Arv.exe
+C:\Users\kasp609g\source\repos\Geometri Arv\Geometri Arv\bin\Debug\Geometri Arv.pdb
+C:\Users\kasp609g\source\repos\Geometri Arv\Geometri Arv\obj\Debug\Geometri Arv.csprojAssemblyReference.cache
+C:\Users\kasp609g\source\repos\Geometri Arv\Geometri Arv\obj\Debug\Geometri Arv.exe
+C:\Users\kasp609g\source\repos\Geometri Arv\Geometri Arv\obj\Debug\Geometri Arv.pdb
