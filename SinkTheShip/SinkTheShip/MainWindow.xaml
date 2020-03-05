@@ -1,0 +1,288 @@
+﻿<Window x:Class="SinkTheShip.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SinkTheShip"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="629.2" Width="1080">
+    <Grid Margin="0,0,0,2.2" HorizontalAlignment="Left" Width="1070">
+        <Grid x:Name="Player1Grid" Margin="77,298,631,55" RenderTransformOrigin="0.5,0.5" IsEnabled="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Button Content="" Grid.Column="0" VerticalAlignment="Top" Height="25" Click="Button_Click" Grid.RowSpan="2" HorizontalAlignment="Left" Width="37" Grid.ColumnSpan="2"/>
+            <Button Content="" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="25" Click="Button_Click" Margin="0.2,0,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="25" Click="Button_Click" Margin="35.2,0,0,0" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+            <Button Content="" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="36" Height="25" Click="Button_Click" Margin="0.2,0,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+            <Button Content="" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="25" Click="Button_Click" Margin="0.2,0,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+            <Button Content="" Grid.Column="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="25" Click="Button_Click" Margin="0.4,0,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="25" Click="Button_Click" Margin="0.4,0,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="25" Click="Button_Click" Grid.ColumnSpan="2" Margin="36.4,0,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="25" Click="Button_Click" Grid.ColumnSpan="2" Margin="35.6,0,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="24" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="24" Click="Button_Click" Margin="0.2,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="24" Click="Button_Click" Grid.ColumnSpan="3" Margin="35.2,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="36" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0.2,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0.2,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Margin="0.4,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Margin="0.4,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="35.4,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="8" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Margin="0.4,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="36.4,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="8" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Margin="0.4,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Margin="0.4,0.2,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,0.4,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click" Margin="0.4,0.4,0,0" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="6" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,24.4,0,0" Grid.RowSpan="3"/>
+            <Button Content="" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,24.6,0,0" Grid.RowSpan="3"/>
+            <Button Content="" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,23.8,0,0" Grid.RowSpan="3"/>
+            <Button Content="" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="37" Height="27" Click="Button_Click" Grid.ColumnSpan="2" Margin="0,23.8,0,-2" Grid.RowSpan="2"/>
+            <Button Content="" Grid.Column="1" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+        </Grid>
+
+        <Grid Margin="609,298,99,55" RenderTransformOrigin="0.5,0.5" IsEnabled="False" Name="Player2Gid" Tag="Player2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Button Content="" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="36" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="0" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="1" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="2" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="3" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="4" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="5" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="6" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="7" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="8" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+            <Button Content="" Grid.Column="9" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="27" Click="Button_Click"/>
+        </Grid>
+        <Label Content="Player 1" HorizontalAlignment="Left" Margin="207,222,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label Content="Player 2" HorizontalAlignment="Left" Margin="747,222,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="369,250,0,0" VerticalAlignment="Top" Width="75" Click="SelectPlayer" Tag="Player1"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="609,250,0,0" VerticalAlignment="Top" Width="75" Click="SelectPlayer" Tag="Player2"/>
+        <WrapPanel HorizontalAlignment="Left" Height="28" Margin="662,189,0,0" VerticalAlignment="Top" Width="283" Name="Player2Panel">
+            <Button x:Name="ScoutBoatBTN_Copy" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Click="PlaceShipClk" Tag="ScoutBoat"/>
+            <Button x:Name="SubmarineBTN_Copy" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Click="PlaceShipClk" Tag="Submarine"/>
+            <Button x:Name="DestroyerBTN_Copy" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Click="PlaceShipClk" Tag="Destroyer"/>
+            <Button x:Name="BattleShipBTN_Copy" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="59" Click="PlaceShipClk" Tag="Battleship"/>
+            <Button x:Name="CarrierBTN_Copy" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="PlaceShipClk" Tag="Carrier"/>
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Left" Height="26" Margin="113,189,0,0" VerticalAlignment="Top" Width="285" Name="Player1Panel">
+            <Button x:Name="ScoutBoatBTN" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Click="PlaceShipClk" Tag="ScoutBoat"/>
+            <Button x:Name="SubmarineBTN" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Click="PlaceShipClk" Tag="Submarine" RenderTransformOrigin="1.038,-0.4"/>
+            <Button x:Name="DestroyerBTN" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Click="PlaceShipClk" Tag="Destroyer"/>
+            <Button x:Name="BattleShipBTN" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="59" Click="PlaceShipClk" Tag="Battleship"/>
+            <Button x:Name="CarrierBTN" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="PlaceShipClk" Tag="Carrier"/>
+        </WrapPanel>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="490,495,0,0" VerticalAlignment="Top" Width="75" Click="StartGame"/>
+
+
+    </Grid>
+
+
+
+</Window>
