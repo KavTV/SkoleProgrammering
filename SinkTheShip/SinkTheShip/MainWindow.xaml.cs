@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,22 +28,56 @@ namespace SinkTheShip
         Game game = new Game();
 
         int selectedPlayer;
+        string direction;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (game.IsGameBegun == false)
             {
-                game.PlaceBTN(sender, selectedPlayer);
+                game.PlaceBTN(sender, selectedPlayer,direction);
             }
             else
             {
-                game.ShootPlayer();
+                Button btn = sender as Button;
+                //Set row and column of Button
+                int row;
+                int column;
+                row = Grid.GetRow(btn);
+                column = Grid.GetColumn(btn);
+
+                string isHit = game.ShootPlayer(row, column);
+                if (isHit == "Hit")
+                {
+                    btn.Background = Brushes.Red;
+                }
+                else if (isHit == "Miss")
+                {
+                    btn.Background = Brushes.Black;
+                }
+                else
+                {
+                    return;
+                }
+                //Thread.Sleep(1000);
+                game.changeTurn();
+                switch (game.Turn)
+                {
+                    case false: Player2Grid.IsEnabled = true; Player1Grid.IsEnabled = false; break;
+                    case true: Player2Grid.IsEnabled = false; Player1Grid.IsEnabled = true; break;
+                }
+
+                string playerWon = game.HasPlayerWon();
+                if (playerWon != null)
+                {
+                    PlayerWinLabel.Content = playerWon;
+                }
+
             }
         }
 
 
 
-        private void PlaceShipClk(object sender, RoutedEventArgs e)
+        private void SelectShipClk(object sender, RoutedEventArgs e)
         {
 
             Button btn = sender as Button;
@@ -58,13 +93,13 @@ namespace SinkTheShip
                     selectedPlayer = 1;
                     Player1Grid.IsEnabled = true;
                     Player1Panel.IsEnabled = true;
-                    Player2Gid.IsEnabled = false;
+                    Player2Grid.IsEnabled = false;
                     Player2Panel.IsEnabled = false;
                     break;
                 case "Player2":
                     game.CurrentShip = null;
                     selectedPlayer = 2;
-                    Player2Gid.IsEnabled = true;
+                    Player2Grid.IsEnabled = true;
                     Player2Panel.IsEnabled = true;
                     Player1Grid.IsEnabled = false;
                     Player1Panel.IsEnabled = false;
@@ -78,8 +113,25 @@ namespace SinkTheShip
         private void StartGame(object sender, RoutedEventArgs e)
         {
             game.EnableAllBTNS();
+            Player2Grid.IsEnabled = true;
+            Player1Grid.IsEnabled = false;
+            SelectPlayer1.IsEnabled = false;
+            SelectPlayer2.IsEnabled = false;
             game.IsGameBegun = true;
-            game.ShootPlayer();
+
+        }
+
+        private void ResetGameClk(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+       
+
+        private void DirectionClk(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+            direction = btn.Tag.ToString();
         }
     }
 }

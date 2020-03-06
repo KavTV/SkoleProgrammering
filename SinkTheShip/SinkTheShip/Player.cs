@@ -15,14 +15,20 @@ namespace SinkTheShip
         public Player() { }
 
 
-        public bool PlaceShip(Button btn, string CurrentShip, int row, int column)
+        public bool PlaceShip(Button btn, string CurrentShip, int row, int column, string direction)
         {
-            return board.PlaceShip(btn, CurrentShip, row, column);
-        }
-        public bool ShootPlayer()
-        {
-
+            return board.PlaceShip(btn, CurrentShip, row, column, direction);
         }
 
+        public string ShootPlayer( int row, int column)
+        {
+            return board.Attack( row, column);
+        }
+        
+
+        public bool HasPlayerWon()
+        {
+            return board.HasPlayerWon();
+        }
     }
 }

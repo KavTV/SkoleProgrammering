@@ -24,8 +24,9 @@ namespace SinkTheShip
 
         public Button CurrentShip { get => currentShip; set => currentShip = value; }
         public bool IsGameBegun { get => isGameBegun; set => isGameBegun = value; }
+        public bool Turn { get => turn;}
 
-        public void PlaceBTN(object sender, int selectedPlayer) // place a part of the ship
+        public void PlaceBTN(object sender, int selectedPlayer, string direction) // place a part of the ship
         {
             if (CurrentShip == null)
             {
@@ -41,11 +42,11 @@ namespace SinkTheShip
             bool allShipsMoved = false;
             if (selectedPlayer == 1)
             {
-                allShipsMoved = player1.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column);
+                allShipsMoved = player1.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column, direction);
             }
             else
             {
-                allShipsMoved = player2.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column);
+                allShipsMoved = player2.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column, direction);
             }
             if (allShipsMoved == true)
             {
@@ -57,10 +58,32 @@ namespace SinkTheShip
             clickedButtonList.Add(btn);
         }
 
-        public bool ShootPlayer()
+        public string ShootPlayer(int row,int column)
         {
             
-            return true;
+            if (Turn == false)
+            {
+               
+                return player2.ShootPlayer(row,column);
+            }
+            else
+            {
+                
+                return player1.ShootPlayer(row,column);
+            }
+            
+        }
+
+        public void changeTurn()
+        {
+            if (Turn == false)
+            {
+                turn = true;
+            }
+            else
+            {
+                turn = false;
+            }
         }
 
         public void EnableAllBTNS()
@@ -70,6 +93,24 @@ namespace SinkTheShip
                 item.IsEnabled = true;
             }
         }
+
+        public string HasPlayerWon()
+        {
+            bool player1Won = player1.HasPlayerWon();
+            bool player2Won = player2.HasPlayerWon();
+            if (player1Won == true)
+            {
+                return "Spiller 2 har vundet!";
+            }
+            else if (player2Won == true)
+            {
+                return "Spiller 1 har vundet!";
+            }
+            return null;
+        }
+
+       
+
 
     }
 }
