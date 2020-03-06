@@ -12,3 +12,17 @@ C:\Users\kasp609g\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug
 C:\Users\kasp609g\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.csproj.GenerateResource.cache
 C:\Users\kasp609g\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.exe
 C:\Users\kasp609g\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\bin\Debug\SinkTheShip.exe.config
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\bin\Debug\SinkTheShip.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\bin\Debug\SinkTheShip.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\MainWindow.g.cs
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\App.g.cs
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip_MarkupCompile.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip_MarkupCompile.lref
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\MainWindow.baml
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.g.resources
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.Properties.Resources.resources
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.csproj.GenerateResource.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\SinkTheShip\SinkTheShip\obj\Debug\SinkTheShip.pdb

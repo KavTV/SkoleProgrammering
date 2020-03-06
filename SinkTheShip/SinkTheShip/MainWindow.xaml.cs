@@ -27,14 +27,14 @@ namespace SinkTheShip
         }
         Game game = new Game();
 
-        int selectedPlayer;
+        int selectedPlayer; // 1 = player 1, 2 = player 2
         string direction;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (game.IsGameBegun == false)
             {
-                game.PlaceBTN(sender, selectedPlayer,direction);
+                game.PlaceShip(sender, selectedPlayer, direction, Player1Grid, Player2Grid);
             }
             else
             {
@@ -58,6 +58,7 @@ namespace SinkTheShip
                 {
                     return;
                 }
+
                 //Thread.Sleep(1000);
                 game.changeTurn();
                 switch (game.Turn)
@@ -110,23 +111,28 @@ namespace SinkTheShip
 
         }
 
-        private void StartGame(object sender, RoutedEventArgs e)
+        private void StartGame(object sender, RoutedEventArgs e) // Enable all buttons and set isgamebegun to true
         {
-            game.EnableAllBTNS();
-            Player2Grid.IsEnabled = true;
-            Player1Grid.IsEnabled = false;
-            SelectPlayer1.IsEnabled = false;
-            SelectPlayer2.IsEnabled = false;
-            game.IsGameBegun = true;
+            // if all ship Buttons are disabled, start game
+            if (ScoutBoatBTN.IsEnabled == false && SubmarineBTN.IsEnabled == false && DestroyerBTN.IsEnabled == false && BattleShipBTN.IsEnabled == false && CarrierBTN.IsEnabled == false && ScoutBoatBTN2.IsEnabled == false && SubmarineBTN2.IsEnabled == false && DestroyerBTN2.IsEnabled == false && BattleShipBTN2.IsEnabled == false && CarrierBTN2.IsEnabled == false)
+            {
+                game.EnableAllBTNS();
+                Player2Grid.IsEnabled = true;
+                Player1Grid.IsEnabled = false;
+                SelectPlayer1.IsEnabled = false;
+                SelectPlayer2.IsEnabled = false;
+                game.IsGameBegun = true;
+
+            }
 
         }
 
         private void ResetGameClk(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
-       
+
 
         private void DirectionClk(object sender, RoutedEventArgs e)
         {

@@ -14,39 +14,36 @@ namespace SinkTheShip
         Player player1 = new Player();
         Player player2 = new Player();
         Button currentShip;
-        List<Button> clickedButtonList = new List<Button>();
+
         bool turn;
         bool isGameBegun = false;
+        public Button CurrentShip { get { return currentShip; } set { currentShip = value; } }
+        public bool IsGameBegun { get => isGameBegun; set => isGameBegun = value; }
+        public bool Turn { get => turn; }
 
         public Game()
         {
         }
 
-        public Button CurrentShip { get => currentShip; set => currentShip = value; }
-        public bool IsGameBegun { get => isGameBegun; set => isGameBegun = value; }
-        public bool Turn { get => turn;}
 
-        public void PlaceBTN(object sender, int selectedPlayer, string direction) // place a part of the ship
+        public void PlaceShip(object sender, int selectedPlayer, string direction, Grid Player1Grid, Grid Player2Grid) // Place the whole ship
         {
-            if (CurrentShip == null)
+            if (CurrentShip == null) // if no selected ship, do nothing
             {
                 return;
             }
-            int row;
-            int column;
             Button btn = sender as Button;
 
-
-            row = Grid.GetRow(btn);
-            column = Grid.GetColumn(btn);
+            int row = Grid.GetRow(btn);
+            int column = Grid.GetColumn(btn);
             bool allShipsMoved = false;
             if (selectedPlayer == 1)
             {
-                allShipsMoved = player1.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column, direction);
+                allShipsMoved = player1.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column, direction, Player1Grid);
             }
             else
             {
-                allShipsMoved = player2.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column, direction);
+                allShipsMoved = player2.PlaceShip(btn, CurrentShip.Tag.ToString(), row, column, direction, Player2Grid);
             }
             if (allShipsMoved == true)
             {
@@ -55,27 +52,28 @@ namespace SinkTheShip
                 //Player1Grid.IsEnabled = false;
                 CurrentShip = null;
             }
-            clickedButtonList.Add(btn);
+
         }
 
-        public string ShootPlayer(int row,int column)
+        public string ShootPlayer(int row, int column)
         {
-            
+
             if (Turn == false)
             {
-               
-                return player2.ShootPlayer(row,column);
+
+                return player2.ShootPlayer(row, column);
             }
             else
             {
-                
-                return player1.ShootPlayer(row,column);
+
+                return player1.ShootPlayer(row, column);
             }
-            
+
         }
 
         public void changeTurn()
         {
+            
             if (Turn == false)
             {
                 turn = true;
@@ -88,10 +86,8 @@ namespace SinkTheShip
 
         public void EnableAllBTNS()
         {
-            foreach (var item in clickedButtonList)
-            {
-                item.IsEnabled = true;
-            }
+            player1.EnableAllBtns();
+            player2.EnableAllBtns();
         }
 
         public string HasPlayerWon()
@@ -109,7 +105,7 @@ namespace SinkTheShip
             return null;
         }
 
-       
+
 
 
     }

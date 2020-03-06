@@ -13,7 +13,7 @@ namespace SinkTheShip
         string[,] shipPositions = new string[10, 10];
 
         List<Ship> allShips = new List<Ship>();
-
+        List<Button> DisabledBtnList = new List<Button>();
 
 
         public Board()
@@ -27,8 +27,9 @@ namespace SinkTheShip
 
 
 
-        public bool PlaceShip(Button clickedBTN, string shipName, int row, int column, string direction)
+        public bool PlaceShip(Button clickedBTN, string shipName, int row, int column, string direction, Grid PlayerGrid)
         {
+            //Make sure fields are empty and a ship is selected
             if (shipName == null)
             {
                 return false;
@@ -39,65 +40,97 @@ namespace SinkTheShip
             }
 
 
-            //clickedBTN.IsEnabled = false;
             foreach (var item in allShips)
             {
                 if (item.Name == shipName)
                 {
-                    switch (direction)
+                    switch (direction) // Try catch to prevent program from crashing by getting out of the array
                     {
                         case "Up":
-                            for (int i = 0; i < item.Size; i++)
+                            try
                             {
-                                if (shipPositions[row - i, column] != null)
+                                for (int i = 0; i < item.Size; i++)
                                 {
-                                    return false;
+                                    if (shipPositions[row - i, column] != null)
+                                    {
+                                        return false;
+                                    }
                                 }
+                                for (int j = 0; j < item.Size; j++)
+                                {
+                                    shipPositions[row - j, column] = shipName;
+                                    GetButtons(PlayerGrid, row - j, column);
+                                }
+                                return true;
                             }
-                            for (int j = 0; j < item.Size; j++)
+                            catch (Exception)
                             {
-                                shipPositions[row - j, column] = shipName;
+                                return false;
                             }
-                            return true;
                         case "Down":
-                            for (int i = 0; i < item.Size; i++)
+                            try
                             {
-                                if (shipPositions[row + i, column] != null)
+                                for (int i = 0; i < item.Size; i++)
                                 {
-                                    return false;
+                                    if (shipPositions[row + i, column] != null)
+                                    {
+                                        return false;
+                                    }
                                 }
+                                for (int j = 0; j < item.Size; j++)
+                                {
+                                    shipPositions[row + j, column] = shipName;
+                                    GetButtons(PlayerGrid, row + j, column);
+                                }
+                                return true;
                             }
-                            for (int j = 0; j < item.Size; j++)
+                            catch (Exception)
                             {
-                                shipPositions[row + j, column] = shipName;
+                                return false;
                             }
-                            return true;
                         case "Right":
-                            for (int i = 0; i < item.Size; i++)
+                            try
                             {
-                                if (shipPositions[row, column + i] != null)
+                                for (int i = 0; i < item.Size; i++)
                                 {
-                                    return false;
+                                    if (shipPositions[row, column + i] != null)
+                                    {
+                                        return false;
+                                    }
                                 }
+                                for (int j = 0; j < item.Size; j++)
+                                {
+                                    shipPositions[row, column + j] = shipName;
+                                    GetButtons(PlayerGrid, row, column + j);
+                                }
+                                return true;
                             }
-                            for (int j = 0; j < item.Size; j++)
+                            catch (Exception)
                             {
-                                shipPositions[row, column + j] = shipName;
+                                return false;
                             }
-                            return true;
                         case "Left":
-                            for (int i = 0; i < item.Size; i++)
+                            try
                             {
-                                if (shipPositions[row, column - i] != null)
+                                for (int i = 0; i < item.Size; i++)
                                 {
-                                    return false;
+                                    if (shipPositions[row, column - i] != null)
+                                    {
+                                        return false;
+                                    }
                                 }
+                                for (int j = 0; j < item.Size; j++)
+                                {
+                                    shipPositions[row, column - j] = shipName;
+                                    GetButtons(PlayerGrid, row, column - j);
+
+                                }
+                                return true;
                             }
-                            for (int j = 0; j < item.Size; j++)
+                            catch (Exception)
                             {
-                                shipPositions[row, column - j] = shipName;
+                                return false;
                             }
-                            return true;
                     }
                 }
             }
@@ -134,6 +167,23 @@ namespace SinkTheShip
 
         }
 
+        private void GetButtons(Grid PlayerGrid, int row, int column)
+        {
+            var itemsInFirstRow = PlayerGrid.Children
+                                            .Cast<UIElement>()
+                                            .Where(i => Grid.GetRow(i) == row && Grid.GetColumn(i) == column).FirstOrDefault();
+            Button btn = itemsInFirstRow as Button;
+            btn.IsEnabled = false;
+            DisabledBtnList.Add(btn);
+        }
+
+        public void EnableAllBtns()
+        {
+            foreach (var item in DisabledBtnList)
+            {
+                item.IsEnabled = true;
+            }
+        }
 
         public string Attack(int row, int column)
         {
@@ -147,7 +197,7 @@ namespace SinkTheShip
                         item.Size -= 1;
                         if (item.Size < 1)
                         {
-                            MessageBox.Show($"Du har ødelagt din modstanders {item.Name}", item.Name);
+                            MessageBox.Show($"Du har sunket din modstanders {item.Name}", item.Name);
                         }
                     }
                 }
@@ -178,15 +228,8 @@ namespace SinkTheShip
             return false;
         }
 
-        public void ShipDestroyed()
-        {
 
-        }
 
-        public void ResetBoard()
-        {
-            shipPositions = new string[10, 10];
-        }
 
     }
 
