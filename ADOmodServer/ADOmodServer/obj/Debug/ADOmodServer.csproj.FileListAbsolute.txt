@@ -1,0 +1,7 @@
+C:\Users\kaspe\Documents\SkoleProgrammering\ADOmodServer\ADOmodServer\bin\Debug\ADOmodServer.exe.config
+C:\Users\kaspe\Documents\SkoleProgrammering\ADOmodServer\ADOmodServer\bin\Debug\ADOmodServer.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\ADOmodServer\ADOmodServer\bin\Debug\ADOmodServer.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\ADOmodServer\ADOmodServer\obj\Debug\ADOmodServer.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\ADOmodServer\ADOmodServer\obj\Debug\ADOmodServer.csproj.CoreCompileInputs.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\ADOmodServer\ADOmodServer\obj\Debug\ADOmodServer.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\ADOmodServer\ADOmodServer\obj\Debug\ADOmodServer.pdb

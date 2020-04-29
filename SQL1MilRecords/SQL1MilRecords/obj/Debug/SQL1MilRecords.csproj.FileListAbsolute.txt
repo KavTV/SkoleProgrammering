@@ -1,0 +1,7 @@
+C:\Users\kaspe\Documents\SkoleProgrammering\SQL1MilRecords\SQL1MilRecords\obj\Debug\SQL1MilRecords.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\SQL1MilRecords\SQL1MilRecords\obj\Debug\SQL1MilRecords.csproj.CoreCompileInputs.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\SQL1MilRecords\SQL1MilRecords\bin\Debug\SQL1MilRecords.exe.config
+C:\Users\kaspe\Documents\SkoleProgrammering\SQL1MilRecords\SQL1MilRecords\bin\Debug\SQL1MilRecords.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\SQL1MilRecords\SQL1MilRecords\bin\Debug\SQL1MilRecords.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\SQL1MilRecords\SQL1MilRecords\obj\Debug\SQL1MilRecords.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\SQL1MilRecords\SQL1MilRecords\obj\Debug\SQL1MilRecords.pdb
