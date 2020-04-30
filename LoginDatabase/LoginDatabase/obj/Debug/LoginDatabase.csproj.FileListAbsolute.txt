@@ -1,0 +1,7 @@
+C:\Users\kaspe\Documents\SkoleProgrammering\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.csprojAssemblyReference.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.csproj.CoreCompileInputs.cache
+C:\Users\kaspe\Documents\SkoleProgrammering\LoginDatabase\LoginDatabase\bin\Debug\LoginDatabase.exe.config
+C:\Users\kaspe\Documents\SkoleProgrammering\LoginDatabase\LoginDatabase\bin\Debug\LoginDatabase.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\LoginDatabase\LoginDatabase\bin\Debug\LoginDatabase.pdb
+C:\Users\kaspe\Documents\SkoleProgrammering\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.exe
+C:\Users\kaspe\Documents\SkoleProgrammering\LoginDatabase\LoginDatabase\obj\Debug\LoginDatabase.pdb
