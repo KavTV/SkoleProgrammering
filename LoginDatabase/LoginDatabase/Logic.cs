@@ -11,14 +11,14 @@ namespace LoginDatabase
     class Logic //Logik klasse
     {
 
-        public User Login(string username, string pws)
+        public User Login(string username, string pws) // Returns the User if login credentials is true
         {
-            bool access = CheckLogin(username, pws);
-            if (access == true)
+            bool access = CheckLogin(username, pws); // If credentials is right, bool is true
+            if (access == true) // Return the user object
             {
                 return GetUserObject(username);
             }
-            else
+            else // If credentials is wrong, return null
             {
                 return null;
             }
@@ -27,12 +27,10 @@ namespace LoginDatabase
 
         public void CreateUser(string username, string pws, string name)
         {
-            //DoStuff
-
             RegisterUser(username, pws, name);
         }
 
-        public void CreateTable(string tableName, int columns, string[] columnName, string[] columnType)
+        public void CreateTable(string tableName, int columns, string[] columnName, string[] columnType) // Creates a table with the entered columns
         {
             var conn = GetConnectionString();
             conn.Open();
@@ -42,24 +40,23 @@ namespace LoginDatabase
 
             for (int i = 0; i < columns; i++)
             {
-                command += "[" + columnName[i] + "] " + columnType[i] + ", ";
+                command += "[" + columnName[i] + "] " + columnType[i] + ", "; // inputs the entered column name and types into the string
             }
             command += ")"; // close the CREATE TABLE()
-            cmd.CommandText = command;
-            try
+            cmd.CommandText = command; // updates the Command
+            try // Try execute
             {
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery(); 
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
 
-
             conn.Close();
         }
 
-        public void GetTables()
+        public void GetTables() // Gets the tables in the sql database
         {
             var conn = GetConnectionString();
             conn.Open();
@@ -74,7 +71,7 @@ namespace LoginDatabase
             }
         }
 
-        public void UpdateUserRights(string username, string rights)
+        public void UpdateUserRights(string username, string rights) // Updates the user rights of the username entered
         {
             var conn = GetConnectionString();
             conn.Open();
@@ -94,8 +91,8 @@ namespace LoginDatabase
             conn.Open();
             //Get random id
             SqlCommand cmd = new SqlCommand("select NEWID()", conn);
-            var specialId = cmd.ExecuteScalar();
-
+            var specialId = cmd.ExecuteScalar(); // Id used as relation between user table and password table
+            // Create parameters for security
             SqlParameter usernameParam = new SqlParameter();
             SqlParameter passwordParam = new SqlParameter();
             SqlParameter nameParam = new SqlParameter();
@@ -110,24 +107,25 @@ namespace LoginDatabase
 
             nameParam.ParameterName = "@name";
             nameParam.Value = name;
+
             cmd.Parameters.Add(usernameParam);
             cmd.Parameters.Add(passwordParam);
             cmd.Parameters.Add(nameParam);
 
-            cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery(); // Insert user to database
             conn.Close();
         }
 
 
         private bool CheckLogin(string username, string pws) // Check credentials
         {
-            bool validUsername = IsUsernameTaken(username);
-            if (validUsername == true)
+            bool validUsername = IsUsernameTaken(username); // If username is right, it returns true
+            if (validUsername == true) //if username is true Get the GUID of the user and check if the password is correct
             {
-                string guid = GetUsernameGuid(username);
+                string guid = GetUsernameGuid(username); // get guid of user
                 if (guid != null)
                 {
-                    bool access = CheckPassword(pws, guid);
+                    bool access = CheckPassword(pws, guid); // If password is correct, return true
                     if (access == true)
                     {
                         return true;
@@ -212,7 +210,7 @@ namespace LoginDatabase
             }
         }
 
-        private User GetUserObject(string username)
+        private User GetUserObject(string username) // Returns a User object of a username
         {
             var conn = GetConnectionString();
             conn.Open();
@@ -234,7 +232,27 @@ namespace LoginDatabase
             return user;
         }
 
+        public List<User> GetAllUsers() // Not used
+        {
+            //Used as a test. Not used
+            List<User> allUsers = new List<User>();
+            var conn = GetConnectionString();
+            conn.Open();
 
+            SqlCommand cmd = new SqlCommand("SELECT * from User_Table", conn);
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                User u = new User();
+                u.Username = rdr[1].ToString();
+                u.Name = rdr[2].ToString();
+                
+                allUsers.Add(u);
+            }
+            return allUsers;
+
+        }
 
 
 

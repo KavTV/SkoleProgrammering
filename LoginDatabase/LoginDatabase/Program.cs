@@ -17,7 +17,7 @@ namespace LoginDatabase
             while (true)
             {
 
-                if (currentUser == null)
+                if (currentUser == null) // If no user is logged in, show login/signup menu
                 {
                     Console.WriteLine("(1) Login");
                     Console.WriteLine("(2) Opret bruger");
@@ -34,11 +34,12 @@ namespace LoginDatabase
                             Console.WriteLine("Prøv igen");
                             break;
                     }
+                    Console.Clear(); // makes sure the username and password gets cleared
                 }
                 else
                 {
                     //Console.Clear();
-                    switch (currentUser.Rights)
+                    switch (currentUser.Rights) //Depending on the rights you get different Menu's
                     {
                         case 1:
                             Console.WriteLine("Velkommen til administrator menu {0}", currentUser.Name);
@@ -47,7 +48,7 @@ namespace LoginDatabase
                             break;
                         case 2:
                             Console.WriteLine("Velkommen til moderator menu {0}", currentUser.Name);
-
+                            ModeratorMenu();
 
                             Console.ReadLine();
                             break;
@@ -57,6 +58,7 @@ namespace LoginDatabase
                             Console.ReadLine();
                             break;
                         default:
+                            Console.WriteLine("Noget gik galt, prøv at logge ind igen");
                             break;
                     }
                 }
@@ -110,7 +112,7 @@ namespace LoginDatabase
                 Console.WriteLine(e);
             }
             Console.Clear();
-            if (usernameInput == "" || passwordInput == "" || nameInput == "")
+            if (usernameInput == "" || passwordInput.Length < 4 || nameInput == "") // If input is empty, or password is less that 4, return
             {
                 Console.WriteLine("Et af dine felter er tomme");
                 return;
@@ -121,11 +123,11 @@ namespace LoginDatabase
 
         }
 
-        static void Login()
+        static void Login() // Gets user input, calls Login Logic
         {
             string usernameInput = "";
             string passwordInput = "";
-            try
+            try // Catch if input cant be read.
             {
                 Console.WriteLine("Skriv dit Brugernavn (Brugt til login)");
                 usernameInput = Console.ReadLine();
@@ -139,14 +141,16 @@ namespace LoginDatabase
             }
 
             Logic lgc = new Logic();
-            currentUser = lgc.Login(usernameInput, passwordInput);
+            currentUser = lgc.Login(usernameInput, passwordInput); // If credentials are right, return the User
         }
 
-        private static void AdminMenu()
+        private static void AdminMenu() // Shows this menu if the user has admin rights
         {
+            //Do something an admin can
             Console.WriteLine("(1) For at se tabeller");
             Console.WriteLine("(2) For at oprette en tabel");
             Console.WriteLine("(3) For at opdatere brugers rettigheder");
+            Console.WriteLine("(4) For at logge ud");
             string selectionInput = Console.ReadLine();
             switch (selectionInput)
             {
@@ -159,53 +163,80 @@ namespace LoginDatabase
                 case "3":
                     UpdateUserRights();
                     break;
+                case "4":
+                    Logout();
+                    break;
                 default:
                     Console.WriteLine("Du har ikke valgt noget");
                     break;
             }
         }
 
-        private static void ModeratorMenu()
+        private static void ModeratorMenu() // shows this menu if User has moderator rights
         {
-
+            // Do something a moderator can
+            Console.WriteLine("(1) For at se tabeller");
+            Console.WriteLine("(2) For at logge ud");
+            string selectionInput = Console.ReadLine();
+            switch (selectionInput)
+            {
+                case "1":
+                    GetTables();
+                    break;
+                case "2": Logout();
+                    break;
+                default:
+                    break;
+            }
         }
 
-        private static void GuestMenu()
+        private static void GuestMenu() // Shows this menu if User is a guest
         {
-            Console.WriteLine("Du har ingen rettigheder");
+            //Guests are not really allowed to do stuff
+            Console.WriteLine("Du har ingen rettigheder!");
 
+            Console.WriteLine("(1) For at logge ud");
+            string selectionInput = Console.ReadLine();
+            switch (selectionInput)
+            {
+                case "1":
+                    Logout();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private static void CreateTable() // Get required information to create a table
         {
             Console.WriteLine("Skriv tabel navn");
-            string tableName = Console.ReadLine();
+            string tableName = Console.ReadLine(); //Get user input
 
             Console.WriteLine("Skriv hvor mange colonner der skal være");
-            int columns = Int32.Parse(Console.ReadLine());
+            int columns = Int32.Parse(Console.ReadLine()); // User puts amount of columns he want
 
-            string[] columnName = new string[columns];
+            string[] columnName = new string[columns]; // Makes an array with amount of user requested columns
             string[] columnType = new string[columns];
 
-            for (int i = 0; i < columns; i++)
+            for (int i = 0; i < columns; i++) // For every column, ask for column name and column type
             {
-                Console.WriteLine("Skriv navnet på colonne {0}", i);
+                Console.WriteLine("Skriv navnet på colonne {0}", i + 1);
                 columnName[i] = Console.ReadLine();
 
                 Console.WriteLine("Skriv Typen på {0}", columnName[i]);
                 columnType[i] = Console.ReadLine();
             }
             Logic lgc = new Logic();
-            lgc.CreateTable(tableName, columns, columnName, columnType);
+            lgc.CreateTable(tableName, columns, columnName, columnType); // Create a table in database.
         }
 
-        private static void GetTables()
+        private static void GetTables() // Gets all the tables
         {
             Logic lgc = new Logic();
             lgc.GetTables();
         }
 
-        private static void UpdateUserRights()
+        private static void UpdateUserRights() // Updates the requested Users rights
         {
             Console.WriteLine("Skriv brugernavnet på bruger der skal oprettes");
             string usernameInput = Console.ReadLine();
@@ -215,6 +246,11 @@ namespace LoginDatabase
 
             Logic lgc = new Logic();
             lgc.UpdateUserRights(usernameInput, rightsInput);
+        }
+
+        private static void Logout() // Logs the user out
+        {
+            currentUser = null;
         }
 
     }
